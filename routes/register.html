@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Election Commision of India</title>
+        <link rel="stylesheet" href="../css/stylesheet.css">
+    </head>
+
+    <body>
+        <style>
+            #address{
+                width: 76%;
+            }
+
+            #imagepart{
+                border: 1px solid black;
+                border-radius: 5px;
+                padding: 10px;
+                width: 72%;
+                /* margin-left: 12%; */
+                margin-bottom: 3%;
+            }
+
+            #select{
+                border: 1px solid black;
+                border-radius: 5px;
+                padding: 7px;
+                width: 73%;
+                /* margin-left: 12%; */
+                margin-bottom: 3%;
+            }
+
+            #select #role{
+                padding: 5px;
+                border-radius: 5px;
+            }
+
+        </style>
+
+        <center>
+
+        <div id="headerSection" style="margin-bottom: 25px;">
+            <h1>Online Voting System</h1>
+        </div>
+
+        <div id="bodySection" style="height: 70%; margin-bottom: 5px;">
+            <h2>Registration</h2>
+
+            <form action="../api/register.php" method="post" enctype="multipart/form-data">
+                <input type="text" name="name" placeholder="name">
+                <input type="number" name="mobile" placeholder="mobile"><br><br>
+                <input type="password" name="password" placeholder="password">
+                <input type="password" name="cpassword" placeholder="confirm password"><br><br>
+                <input id="address" type="text" name="address" placeholder="address"><br><br>
+                <div id="imagepart">
+                    Upload image : <input type="file" name="photo"><br>
+                </div>
+                <div id="select">
+                    Select your role : <select name="role" id="role">
+                        <option value="1">Voter</option>
+                        <option value="2">Group</option>
+                    </select><br><br>
+                </div>
+                <button id="signupbtn">Register</button><br><br>
+                Already user?<a href="../"> Login here</a>
+                <br>
+
+            </form>
+        </div>
+    </center>
+    </body>
+   
+</html>

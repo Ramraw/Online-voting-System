@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Online Voting System</title>
+        <link rel="stylesheet" href="css/stylesheet.css">
+    </head>
+    
+
+    
+    <body>
+        <center>
+        <div id="headerSection">
+            <h1>Election Commision of India</h1>
+        </div>
+        
+        <div id="bodySection">
+            <form action="api/login.php" method="post">
+                <h2>Login</h2>
+                <input type="number" name="mobile" placeholder="Enter mobile"><br><br>
+                <input type="password" name="password" placeholder="Enter password"><br><br>
+                <select id="dropbox" name="role">
+                    <option value="1">Voter</option>
+                    <option value="2">Group</option>
+                </select><br><br>
+                <button id="loginbtn">Login</button><br><br>
+                New user?<a href="routes/register.html" style="text-decoration: none;"> Register here!</a>
+            </form>
+        </div>
+    </center>
+    </body>
+    
+</html>
